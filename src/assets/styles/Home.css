@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+}
+
+.app-container {
+  text-align: center;
+}
+
+header {
+  position: relative;
+}
+
+.logo-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.home-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+  z-index: 2; /* Asegúrate de que el z-index mantenga el título sobre el slider */
+  font-family: 'PrStart';
+}
+
+section {
+  padding: 20px;
+  text-align: justify;
+  color: #fff; /* Asegura que el texto sea legible sobre el fondo oscuro */
+}
+
+h1:hover {
+  cursor: pointer;
+}
+
+/* Estilos específicos para el slider */
+.slick-slide img {
+  width: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  margin: auto; /* Centra las imágenes en el slider */
+}
+
+.slick-dots {
+  bottom: 25px; /* Ajusta la posición de los puntos de navegación del slider */
+}
+
+.slick-dots li button:before {
+  color: #fff; /* Cambia el color de los puntos de navegación */
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #fff; /* Cambia el color de las flechas de navegación */
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}

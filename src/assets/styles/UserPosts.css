@@ -1,0 +1,113 @@
+/* UserPosts.css en assets/styles */
+
+/* Estilos generales para UserPosts */
+.user-posts-container {
+    color: #fff;
+    background-color: #121212;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .user-posts-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-post {
+    background-color: #424242;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .user-post h2 {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .user-post-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .add-post-button {
+    display: block;
+    background-color: var(--vibrant-yellow);
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .add-post-button:hover {
+    background-color: #e6c04d;
+  }
+  
+  /* Estilos para la ventana flotante de confirmación de eliminación */
+  .delete-confirmation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .delete-message {
+    margin-bottom: 20px;
+  }
+  
+  .delete-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .delete-confirmation .delete-buttons button {
+    border: none; /* Elimina el borde */
+    cursor: pointer;
+    padding: 10px; /* Puedes ajustar el padding según necesites */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: background-color 0.2s ease; /* Transición suave para el efecto hover */
+}
+
+  
+  .delete-button,
+  .cancel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-button {
+    background-color: #28a745; /* Fondo rojo vibrante */
+  }
+  
+  .cancel-button {
+    background-color: #ff3b3b; /* Fondo verde vibrante */
+  }
+
+  .delete-confirmation .cancel-button:hover {
+    background-color: #66bb6a ; /* Rojo más claro al hacer hover */
+  }
+
+  .delete-confirmation .delete-button:hover {
+    background-color: #ff6666; /* Verde más claro al hacer hover */
+  }
+  
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .user-post {
+      width: 100%;
+    }
+  }
+  

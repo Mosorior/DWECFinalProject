@@ -1,0 +1,110 @@
+/* src/assets/styles/CreatePost.css */
+
+.create-post-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333; /* Fondo oscuro para el contenedor */
+    color: #fff; /* Texto claro */
+  }
+  
+  .create-post-form {
+    width: 80%; /* Ajustar al ancho deseado */
+    max-width: 800px; /* Establecer un ancho máximo */
+    background-color: #444; /* Fondo para el formulario */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-post-form h1 {
+    color: #fff; /* Ajustar al color deseado */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .create-post-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333; /* Fondo oscuro para el input */
+    color: #fff; /* Texto claro para el input */
+  }
+  
+  .create-post-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--vibrant-yellow);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .create-post-form button:hover {
+    background-color: #e6c04d;
+  }
+
+  .create-post-form .post-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .create-post-form .post-buttons button {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: var(--vibrant-yellow);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-post-form .post-buttons button:hover {
+    background-color: #e6c04d;
+  }
+  
+  
+  /* Estilos para el editor EasyMDE */
+  /* EasyMDE ya incluye estilos por defecto. Estos estilos son solo para personalizarlo más */
+  .EasyMDEContainer {
+    width: 100%; /* Asegúrate de que el contenedor del editor ocupe el ancho completo */
+  }
+  .CodeMirror, .CodeMirror-scroll {
+    background-color: #333; /* Fondo oscuro para el editor */
+    color: #fff; /* Texto claro */
+  }
+  
+  .EasyMDEContainer .editor-toolbar {
+    background-color: #222 !important; /* Fondo más oscuro para la barra de herramientas */
+    display: flex; /* Asegurarse de que los elementos estén en una sola fila */
+    flex-wrap: nowrap; /* Evitar que los elementos se envuelvan en varias líneas */
+    justify-content: flex-start; /* Alinear elementos al principio */
+    color: #fff !important;
+  }
+  
+  .EasyMDEContainer .editor-toolbar button {
+    color: #fff; /* Iconos claros */
+    background-color: transparent;
+  }
+  .CodeMirror, .CodeMirror-scroll {
+    background-color: #333 !important; /* Fondo oscuro para el área del editor */
+    color: #fff !important; /* Texto claro */
+  }
+  
+  .EasyMDEContainer .editor-preview {
+    background-color: #333 !important; /* Fondo oscuro para el visor */
+    color: #fff !important; /* Texto claro */
+  }
+  
+  .EasyMDEContainer .editor-preview-active, 
+  .EasyMDEContainer .editor-preview-active-side {
+    display: block; /* Mostrar solo la vista previa */
+  }
+  

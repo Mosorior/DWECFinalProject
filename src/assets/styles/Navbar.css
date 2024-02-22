@@ -1,0 +1,110 @@
+/* src/Navbar.css */
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 50px;
+  }
+  .navbar-title {
+    font-family: 'PrStart', sans-serif;
+    margin-right: 20px;
+  }
+  .navbar-title:hover{
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin: 0 20px;
+    display: inline;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .login-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-login-button {
+    background-color: #f8f8f8;
+    color: #333;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    max-height: 100%;
+  }
+  
+  .login-button:hover {
+    background-color: #e8e8e8;
+  }
+  .profile-image {
+    width: 40px; /* Ajusta esto al tamaño que desees */
+    height: 40px; /* Asegúrate de que el ancho y el alto sean iguales para un círculo perfecto */
+    border-radius: 50%; /* Esto crea el efecto de círculo */
+    object-fit: cover; /* Asegura que la imagen se recorte para llenar el espacio */
+  }
+
+  .profile-image:hover{
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  }
+
+  .profile-menu {
+    display: none;
+    position: absolute;
+    right: 10px; /* Ajusta según tu layout */
+    top: 60px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 100;
+    width: 200px;
+}
+
+.profile-menu.active {
+    display: block;
+}
+
+.profile-menu-item {
+  color: #333;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+.profile-menu-item:last-child {
+  border-bottom: none;
+  border-radius: 4px;
+}
+
+.profile-menu-item svg {
+  color: #333;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
